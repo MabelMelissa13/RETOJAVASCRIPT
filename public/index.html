@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Porcentaje</title>
+    <link href="../public/css/tailwind.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap">
+    
+</head>
+
+<body class="bg-teal-600 flex py-20 justify-center min-h-screen">
+  <div class="w-[1100px] h-[600px] bg-teal-900 text-teal-800 rounded-lg ">
+    <header class="mb-12 border-b-4 border-teal-700 pb-6 mx-h-full w-full">
+      <h1 class="text-center sm:text-5xl mt-4 sm:mt-6 mb-2 sm:mb-2 text-teal-600 font-source-code font-bold">Calculadora de porcentaje</h1>
+
+    </header>
+    <main>
+      <div class="flex items-center justify-center mb-20">
+        <span class=" mr-2 text-4xl  text-white font-source-code ">Calcula el</span>
+        <input id="percentage" type="number" class="bg-teal-600 text-white border-none  rounded p-0 text-row w-60" >
+
+        <span class="mx-4 text-4xl text-white font-source-code ">% de</span>
+        <input id="total" type="number" class="bg-teal-600 text-white border-none rounded p-0 text-row w-60 " >
+      </div>
+
+      <div class="text-center mb-10">
+        <span id="error-message" class="text-2xl text-white  font-source-code"></span>
+      </div>
+
+      <div class="flex justify-center mb-20 ">
+        <button id="calculateBtn" class=" text-green-200 border  border-green-200 rounded-lg  px-10 py-2 w-60  text-sm focus:outline-none">
+          CALCULAR
+        </button>
+      </div>
+
+
+      <div class="text-center ">
+        <span class="text-6xl  text-green-200 font-source-code font-bold">Resultado: </span>
+        <span id="result" class="text-6xl  text-green-200 font-bold"></span>
+      </div>
+    </main>
+  </div>
+</body>
+    <script src="./js/main.js"></script>
+</body>
+</html>
